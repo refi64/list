@@ -1,5 +1,4 @@
-#ifndef LIST_H
-#define LIST_H
+#pragma once
 
 #define list_cat2(a,b) a##b
 #define list_cat(a,b) list_cat2(a,b)
@@ -16,5 +15,3 @@
     l[list_lenref(l)-1] = x;\
 } while (0)
 #define list_free(l) free(l?(void*)l-sizeof(size_t):NULL)
-
-#endif
